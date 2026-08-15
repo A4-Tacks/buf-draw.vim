@@ -27,5 +27,5 @@ function! s:draw_visual(color) abort
         return
     endif
 
-    execute $'syntax match {a:color} /\%{line('.')}l\%{start}c.*\%{end}c./'
+    execute $'syntax match {a:color} /\v%{line('.')}l%(%{start}c|%{end}c|%>{start}c%<{end}c)./'
 endfunction
