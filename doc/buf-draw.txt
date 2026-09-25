@@ -1,0 +1,5 @@
+BufDrawMapInit {key} {group-name}			*BufDrawMapInit*
+	Create a normal mode keybind, press {key} to {group-name} highlight
+	cursor or visual selected.
+>
+	:BufDrawMapInit ' String
