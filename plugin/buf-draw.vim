@@ -15,7 +15,7 @@ function! s:init_buf_draw(mapkey, color) abort
 endfunction
 
 function! s:draw_visual(color) abort
-    let [start, end] = sort([col('.'), col('v')])
+    let [start, end] = sort([col('.'), col('v')], 'f')
 
     if line('.') != line('v')
         echoerr 'draw_visual unsupported multi-line draw'
